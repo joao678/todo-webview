@@ -1,0 +1,81 @@
+:root {
+    --list-item-right-margin: 0px;
+}
+
+* {
+    font-family: system-ui;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+ul {
+    flex: 1;
+    display: flex;
+    overflow-y: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left: 0px;
+    flex-direction: column;
+    gap: 5px;
+}
+
+
+li {
+    display: flex;
+    padding-right: var(--list-item-right-margin);
+}
+
+span {
+    flex: 1;
+}
+
+li::marker {
+    content: none;
+}
+
+button {
+    width: 27px;
+    height: 27px;
+}
+
+input[type="text"] {
+    flex: 1;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    height: 27px;
+    width: 27px;
+    margin-bottom: -1px;
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.input-box {
+    display: flex;
+    width: 100%;
+    gap: 5px;
+}
+
+.done {
+    text-decoration: line-through;
+    font-style: italic;
+    color: darkgray;
+}
+
+.reset-button {
+    align-self: flex-end;
+    width: auto;
+}
