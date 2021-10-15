@@ -1,0 +1,4 @@
+[submodule "webview"]
+	path = webview
+	url = https://github.com/polevpn/webview.git
+	branch = main
